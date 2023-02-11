@@ -1,4 +1,4 @@
-# Workshop Management
+# CRISS Inventory Management
 
 ## Installation instructions
 - Clone the repository
