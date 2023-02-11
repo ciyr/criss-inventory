@@ -1,0 +1,29 @@
+.logo {
+    width: 10%;
+    height: auto;
+    margin: 1%;
+    float: left;
+    text-align: left;
+    }
+
+.mainHeading {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    }
+
+.paragraph {
+    margin-left: 2.5%;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    }
+
+#daterange {
+    margin-left: 2.5%;
+}
+
+.generate_button {
+    margin-left: 1.5%;
+}

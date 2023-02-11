@@ -1,0 +1,47 @@
+{% load static %}
+<html>
+<head>
+    {% if message %}
+    <script>
+        alert('{{ message }}');
+    </script>
+    {% endif %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/addNewItem.css' %}">
+<title>Add a new item </title>
+</head>
+
+<body>
+<!-- add a block of h1 text -->
+<h1>Add a new item </h1>
+<!-- <div class="max-w-2xl mx-auto"> -->
+    <button type="button" class="p-1.5 ml-2 text-sm font-medium text-white bg-blue-400 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="float: right;margin-right: 2.5%;"><a href="{% url 'homePage' %}">Home Page</a></button>
+<!-- </div> -->
+<form action="add" method="POST">
+{% csrf_token %}
+<div class="form-group">
+    <label for="itemName">Item Name</label>
+    <input type="text" name="itemName" id="itemName" class="form-control py-2 px-3 border border-gray-300 focus:border-red-300 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" required>
+</div>
+<br>
+<div class="form-group">
+    <label for="itemId" class="block mb-1"> Item ID</label>
+    <input type="text" name="itemId" id="itemId" class="form-control py-2 px-3 border border-gray-300 focus:border-red-300 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" required>
+</div>
+<br>
+<div class="form-group" class="block mb-1">
+    <label for="quantity">Date</label>
+    <input type="text" name="dateAdded" id="dateAdded" class="form-control py-2 px-3 border border-gray-300 focus:border-red-300 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" required>
+</div>
+<br>
+<div class="form-group" class="block mb-1">
+    <label for="quantity">Quantity</label>
+    <input type="number" name="quantity" id="quantity" class="form-control py-2 px-3 border border-gray-300 focus:border-red-300 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" required>
+</div>
+<br>
+    <input type="submit" value="Submit" class="p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 submitButton">
+</form>
+</body>
+
+</html>

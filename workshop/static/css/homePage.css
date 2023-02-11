@@ -1,0 +1,71 @@
+body {
+    background-color: white;
+ }
+
+.logo {
+width: 10%;
+height: auto;
+margin: 1%;
+float: left;
+text-align: left;
+}
+
+.searchBar {
+width: 50%;
+float: left;
+text-align: center;
+margin: 5%;
+}
+
+.searchBarBottom {
+width: 50%;
+float: left;
+text-align: center;
+margin-left: 5%;
+margin-top: 2%;
+}
+
+.GenerateStatementDiv
+{
+text-align: center;
+}
+
+.max-w-2xl
+{
+    margin-top: 2.5px;
+}
+
+.signout-button 
+{
+    text-align: right;
+    align-self: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.top-buttons {
+    margin-top: 5%;
+    text-align: right;
+    align-self: auto;
+    margin-right: 10px;
+}
+
+.middle-buttons {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: right;
+    align-self: auto;
+    margin-right: 10px;
+}
+
+/* .container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+  }
+button {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px;
+} */
